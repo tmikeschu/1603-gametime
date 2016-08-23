@@ -1,0 +1,20 @@
+body {
+  background-image: url("https://static.pexels.com/photos/113850/pexels-photo-113850.jpeg");
+  background-size: 100% 100%;
+}
+
+#grid {
+  background-color: #d8dddf;
+  border: 70px solid #7f979f;
+  border-radius: 20px;
+}
+
+.nav-header {
+  background-color: #d8dddf;
+  font-size: 25px;
+  color: #7f979f;
+}
+
+#score-board {
+  background-color: white;
+}
