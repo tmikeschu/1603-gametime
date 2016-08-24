@@ -158,5 +158,22 @@ describe('DataTransfer', function(){
       assert.equal(staticNode2.data, null);
       assert.equal(staticNode1.data, null);
     });
+
+    it('should have all values that are the same to start', function(){
+      var staticNode1 = new StaticNode({ data: 2, leftNode: "edge" });
+      var staticNode2 = new StaticNode({ data: 2, leftNode: staticNode1 });
+      var staticNode3 = new StaticNode({ data: 2, leftNode: staticNode2 });
+      var staticNode4 = new StaticNode({ data: 2, leftNode: staticNode3, rightNode: "edge" });
+      staticNode1.rightNode = staticNode2;
+      staticNode2.rightNode = staticNode3;
+      staticNode3.rightNode = staticNode4;
+      var topRow = new NodeList({head: staticNode4, direction: "right"});
+
+      DataTransfer(topRow);
+      assert.equal(staticNode4.data, 4);
+      assert.equal(staticNode3.data, 4);
+      assert.equal(staticNode2.data, null);
+      assert.equal(staticNode1.data, null);
+    });
   });
 });
