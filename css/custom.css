@@ -18,3 +18,7 @@ body {
 #score-board {
   background-color: white;
 }
+
+#game-over {
+  background-color: blue;
+}
