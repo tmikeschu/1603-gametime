@@ -17,13 +17,18 @@
 <body>
   <div class="container-fluid">
     <div class="row">
-      <div class="col-md-8">
+
+      <div class="game-container">
+
+        <div id="game-over">
+          <h1>Game Over</h1>
+        </div>
+
         <input type="button" id="new-game" name="new-game" value="New Game">
         <canvas id="grid" width="460" height="460"></canvas>
+
       </div>
-      <div id="game-over">
-        <h1>your game is over</h1>
-      </div>
+
       <div class="col-md-4" id="score-board">
         Score Board
       </div>

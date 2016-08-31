@@ -20,5 +20,18 @@ body {
 }
 
 #game-over {
-  background-color: blue;
+  width: 600px;
+  height: 600px;
+  z-index: 9999;
+  background-color: #EDE0C8;
+  border-radius: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
