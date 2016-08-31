@@ -1,25 +1,46 @@
 body {
-  background-image: url("https://static.pexels.com/photos/113850/pexels-photo-113850.jpeg");
+  font-family: 'Catamaran', sans-serif;
+  background-image: url("../images/pattern21.jpg");
   background-size: 100% 100%;
 }
 
 #grid {
-  background-color: #d8dddf;
-  border: 70px solid #7f979f;
+  background-color: #faf8ef;
+  border: 70px solid #776e65;
   border-radius: 20px;
 }
 
 .nav-header {
-  background-color: #d8dddf;
+  font-family: 'Catamaran', sans-serif;
+
+  background-color: #faf8ef;
   font-size: 25px;
-  color: #7f979f;
+  color: #776e65;
 }
 
 #score-board {
-  background-color: white;
+  background-color: #bbada0;
+  color: #eee4da;
+  font-family: 'Catamaran', sans-serif;
+
 }
 
 #game-over {
+  background-color: #bbada0;
+  font-family: 'Catamaran', sans-serif;
+
+}
+
+#new-game {
+  background-color: #bbada0;
+  color: #eee4da;
+  font-family: 'Catamaran', sans-serif;
+
+}
+
+#game-over {
+  color: #eee4da;
+  font-family: 'Catamaran', sans-serif;
   width: 600px;
   height: 600px;
   z-index: 9999;
