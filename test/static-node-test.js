@@ -1,5 +1,4 @@
 const assert = require('chai').assert;
-
 const StaticNode = require('../lib/static-node');
 
 describe('StaticNode', function(){
