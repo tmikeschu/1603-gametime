@@ -1,5 +1,9 @@
 # Welcome to 1603 - A Turing Versioned 2048
 
+## The Game:
+
+- [Play The Game Here](https://icorson3.github.io/1603-gametime/)
+
 ## How to play:
 
 - The game starts with two tiles, each has a value and is randomly placed.

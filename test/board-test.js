@@ -6,7 +6,7 @@ var testContext = canvas.getContext('2d');
 describe('Board', function(){
   context('nodes and lists are automatically setup', function(){
     var newBoard = new Board(testContext);
-
+    
     it('should have default attributes created automatically', function(){
       assert.equal(newBoard.nodes.length, 16);
       assert.equal(newBoard.upLists.length, 4);
