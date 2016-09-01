@@ -8,33 +8,37 @@ body {
   background-color: #faf8ef;
   border: 70px solid #776e65;
   border-radius: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
 }
 
 .nav-header {
   font-family: 'Catamaran', sans-serif;
-
   background-color: #faf8ef;
-  font-size: 25px;
+  font-size: 40px;
   color: #776e65;
+  text-align: center;
+}
+
+#score {
+  width: auto;
 }
 
 #score-board {
   background-color: #bbada0;
+  font-size: 20px;
   color: #eee4da;
   font-family: 'Catamaran', sans-serif;
-
-}
-
-#game-over {
-  background-color: #bbada0;
-  font-family: 'Catamaran', sans-serif;
-
+  width: auto;
+  margin-top: 20px;
+  margin-left: 200px;
 }
 
 #new-game {
-  background-color: #bbada0;
+  background-color: #C67171	;
   color: #eee4da;
   font-family: 'Catamaran', sans-serif;
+  text-align: center;
 }
 
 #game-over {
@@ -48,6 +52,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-left: 50px;
+  margin-top: 20px;
 }
 
 .game-container {

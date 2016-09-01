@@ -18,6 +18,7 @@
 <body>
   <div class="container-fluid">
     <div class="row">
+      <div class="col-md-6">
 
       <div class="game-container">
 
@@ -25,23 +26,26 @@
           <h1>Game Over</h1>
         </div>
 
-        <input type="button" id="new-game" name="new-game" value="New Game">
         <canvas id="grid" width="460" height="460"></canvas>
 
       </div>
+    </div>
 
-      <div class="col-md-4" id="score-board">
+      <div class="col-md-6 text-center" id="score-board">
+        <input type="button" id="new-game" name="new-game" value="New Game">
         <div class="">
 
-        Score Board:
-        <p id="score"></p>
-      </div>
-      <div class="highScore">
-        High Score:
-        <p id="high-score"></p>
-      </div>
+          Score:
+          <p id="zero-score">0</p>
+          <p id="score"></p>
+        </div>
+        <div class="highScore">
+          High Score:
+          <p id="high-score"></p>
+        </div>
       </div>
     </div>
+
   </div>
   <script src="main.bundle.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
