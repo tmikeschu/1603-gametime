@@ -56,7 +56,7 @@
 
 	// start with a canvas and make blocks line up next to each other
 
-	var canvas = document.findElementById("grid");
+	// var canvas = document.findElementById("grid");
 
 /***/ }
 /******/ ]);
