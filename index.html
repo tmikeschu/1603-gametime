@@ -20,20 +20,20 @@
     <div class="row">
       <div class="col-md-6">
 
-      <div class="game-container">
+        <div class="game-container">
 
-        <div id="game-over">
-          <h1>Game Over</h1>
+          <div id="game-over">
+            <h1>Game Over</h1>
+          </div>
+
+          <canvas id="grid" width="460" height="460"></canvas>
         </div>
-
-        <canvas id="grid" width="460" height="460"></canvas>
-
       </div>
-    </div>
 
       <div class="col-md-6 text-center" id="score-board">
+        <br>
         <input type="button" id="new-game" name="new-game" value="New Game">
-        <div class="">
+        <div>
 
           Score:
           <p id="zero-score">0</p>
@@ -43,6 +43,16 @@
           High Score:
           <p id="high-score"></p>
         </div>
+        <hr>
+        Welcome to 2018!<br>
+        The objective of the game is simple.<br>
+        Get a single tile to 2048 and you win.<br>
+        In order to do this, us the arrow keys<br>
+        to push tiles to their respective sides<br>
+        of the board. If a tile collides with another<br>
+        tile of the same value, one will double and<br>
+        the other will disappear.  Be careful as a <br>
+        new tile is also created each time you move!
       </div>
     </div>
 
