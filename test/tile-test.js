@@ -1,5 +1,4 @@
 const assert = require('chai').assert;
-
 const Tile = require('../lib/tile');
 
 describe('Tile', function(){

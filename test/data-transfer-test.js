@@ -1,7 +1,7 @@
 const assert = require('chai').assert;
 
 const StaticNode = require('../lib/static-node');
-const NodeList = require('../lib/node-list');
+const List = require('../lib/node-list');
 const DataTransfer = require('../lib/data-transfer');
 
 describe('DataTransfer', function(){
@@ -14,9 +14,9 @@ describe('DataTransfer', function(){
       staticNode1.rightNode = staticNode2;
       staticNode2.rightNode = staticNode3;
       staticNode3.rightNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "right"});
+      var topRow = new List({head: staticNode4, direction: "right"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 8);
       assert.equal(staticNode1.data, null);
       assert.equal(staticNode2.data, null);
@@ -31,9 +31,9 @@ describe('DataTransfer', function(){
       staticNode1.rightNode = staticNode2;
       staticNode2.rightNode = staticNode3;
       staticNode3.rightNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "right"});
+      var topRow = new List({head: staticNode4, direction: "right"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 2);
       assert.equal(staticNode3.data, 8);
       assert.equal(staticNode2.data, null);
@@ -48,9 +48,9 @@ describe('DataTransfer', function(){
       staticNode1.rightNode = staticNode2;
       staticNode2.rightNode = staticNode3;
       staticNode3.rightNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "right"});
+      var topRow = new List({head: staticNode4, direction: "right"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 8);
       assert.equal(staticNode3.data, 4);
       assert.equal(staticNode2.data, 2);
@@ -65,9 +65,9 @@ describe('DataTransfer', function(){
       staticNode1.rightNode = staticNode2;
       staticNode2.rightNode = staticNode3;
       staticNode3.rightNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "right"});
+      var topRow = new List({head: staticNode4, direction: "right"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 16);
       assert.equal(staticNode3.data, 8);
       assert.equal(staticNode2.data, 4);
@@ -82,9 +82,9 @@ describe('DataTransfer', function(){
       staticNode1.rightNode = staticNode2;
       staticNode2.rightNode = staticNode3;
       staticNode3.rightNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "right"});
+      var topRow = new List({head: staticNode4, direction: "right"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 8);
       assert.equal(staticNode3.data, 2);
       assert.equal(staticNode2.data, null);
@@ -99,9 +99,9 @@ describe('DataTransfer', function(){
       staticNode1.rightNode = staticNode2;
       staticNode2.rightNode = staticNode3;
       staticNode3.rightNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "right"});
+      var topRow = new List({head: staticNode4, direction: "right"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 16);
       assert.equal(staticNode3.data, 4);
       assert.equal(staticNode2.data, null);
@@ -116,9 +116,9 @@ describe('DataTransfer', function(){
       staticNode1.rightNode = staticNode2;
       staticNode2.rightNode = staticNode3;
       staticNode3.rightNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "right"});
+      var topRow = new List({head: staticNode4, direction: "right"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 2);
       assert.equal(staticNode3.data, null);
       assert.equal(staticNode2.data, null);
@@ -133,9 +133,9 @@ describe('DataTransfer', function(){
       staticNode1.rightNode = staticNode2;
       staticNode2.rightNode = staticNode3;
       staticNode3.rightNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "right"});
+      var topRow = new List({head: staticNode4, direction: "right"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 4);
       assert.equal(staticNode3.data, null);
       assert.equal(staticNode2.data, null);
@@ -150,9 +150,9 @@ describe('DataTransfer', function(){
       staticNode1.rightNode = staticNode2;
       staticNode2.rightNode = staticNode3;
       staticNode3.rightNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "right"});
+      var topRow = new List({head: staticNode4, direction: "right"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 4);
       assert.equal(staticNode3.data, null);
       assert.equal(staticNode2.data, null);
@@ -167,9 +167,9 @@ describe('DataTransfer', function(){
       staticNode1.rightNode = staticNode2;
       staticNode2.rightNode = staticNode3;
       staticNode3.rightNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "right"});
+      var topRow = new List({head: staticNode4, direction: "right"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 4);
       assert.equal(staticNode3.data, 4);
       assert.equal(staticNode2.data, null);
@@ -186,9 +186,9 @@ describe('DataTransfer', function(){
       staticNode1.leftNode = staticNode2;
       staticNode2.leftNode = staticNode3;
       staticNode3.leftNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "left"});
+      var topRow = new List({head: staticNode4, direction: "left"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 8);
       assert.equal(staticNode1.data, null);
       assert.equal(staticNode2.data, null);
@@ -203,9 +203,9 @@ describe('DataTransfer', function(){
       staticNode1.leftNode = staticNode2;
       staticNode2.leftNode = staticNode3;
       staticNode3.leftNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "left"});
+      var topRow = new List({head: staticNode4, direction: "left"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 2);
       assert.equal(staticNode3.data, 8);
       assert.equal(staticNode2.data, null);
@@ -220,9 +220,9 @@ describe('DataTransfer', function(){
       staticNode1.leftNode = staticNode2;
       staticNode2.leftNode = staticNode3;
       staticNode3.leftNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "left"});
+      var topRow = new List({head: staticNode4, direction: "left"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 8);
       assert.equal(staticNode3.data, 4);
       assert.equal(staticNode2.data, 2);
@@ -237,9 +237,9 @@ describe('DataTransfer', function(){
       staticNode1.leftNode = staticNode2;
       staticNode2.leftNode = staticNode3;
       staticNode3.leftNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "left"});
+      var topRow = new List({head: staticNode4, direction: "left"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 16);
       assert.equal(staticNode3.data, 8);
       assert.equal(staticNode2.data, 4);
@@ -254,9 +254,9 @@ describe('DataTransfer', function(){
       staticNode1.leftNode = staticNode2;
       staticNode2.leftNode = staticNode3;
       staticNode3.leftNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "left"});
+      var topRow = new List({head: staticNode4, direction: "left"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 8);
       assert.equal(staticNode3.data, 2);
       assert.equal(staticNode2.data, null);
@@ -271,9 +271,9 @@ describe('DataTransfer', function(){
       staticNode1.leftNode = staticNode2;
       staticNode2.leftNode = staticNode3;
       staticNode3.leftNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "left"});
+      var topRow = new List({head: staticNode4, direction: "left"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 16);
       assert.equal(staticNode3.data, 4);
       assert.equal(staticNode2.data, null);
@@ -288,9 +288,9 @@ describe('DataTransfer', function(){
       staticNode1.leftNode = staticNode2;
       staticNode2.leftNode = staticNode3;
       staticNode3.leftNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "left"});
+      var topRow = new List({head: staticNode4, direction: "left"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 2);
       assert.equal(staticNode3.data, null);
       assert.equal(staticNode2.data, null);
@@ -305,9 +305,9 @@ describe('DataTransfer', function(){
       staticNode1.leftNode = staticNode2;
       staticNode2.leftNode = staticNode3;
       staticNode3.leftNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "left"});
+      var topRow = new List({head: staticNode4, direction: "left"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 4);
       assert.equal(staticNode3.data, null);
       assert.equal(staticNode2.data, null);
@@ -322,9 +322,9 @@ describe('DataTransfer', function(){
       staticNode1.leftNode = staticNode2;
       staticNode2.leftNode = staticNode3;
       staticNode3.leftNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "left"});
+      var topRow = new List({head: staticNode4, direction: "left"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 4);
       assert.equal(staticNode3.data, null);
       assert.equal(staticNode2.data, null);
@@ -339,9 +339,9 @@ describe('DataTransfer', function(){
       staticNode1.leftNode = staticNode2;
       staticNode2.leftNode = staticNode3;
       staticNode3.leftNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "left"});
+      var topRow = new List({head: staticNode4, direction: "left"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 4);
       assert.equal(staticNode3.data, 4);
       assert.equal(staticNode2.data, null);
@@ -360,9 +360,9 @@ describe('DataTransfer', function(){
       staticNode1.upNode = staticNode2;
       staticNode2.upNode = staticNode3;
       staticNode3.upNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "up"});
+      var topRow = new List({head: staticNode4, direction: "up"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 8);
       assert.equal(staticNode1.data, null);
       assert.equal(staticNode2.data, null);
@@ -377,9 +377,9 @@ describe('DataTransfer', function(){
       staticNode1.upNode = staticNode2;
       staticNode2.upNode = staticNode3;
       staticNode3.upNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "up"});
+      var topRow = new List({head: staticNode4, direction: "up"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 2);
       assert.equal(staticNode3.data, 8);
       assert.equal(staticNode2.data, null);
@@ -394,9 +394,9 @@ describe('DataTransfer', function(){
       staticNode1.upNode = staticNode2;
       staticNode2.upNode = staticNode3;
       staticNode3.upNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "up"});
+      var topRow = new List({head: staticNode4, direction: "up"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 8);
       assert.equal(staticNode3.data, 4);
       assert.equal(staticNode2.data, 2);
@@ -411,9 +411,9 @@ describe('DataTransfer', function(){
       staticNode1.upNode = staticNode2;
       staticNode2.upNode = staticNode3;
       staticNode3.upNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "up"});
+      var topRow = new List({head: staticNode4, direction: "up"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 16);
       assert.equal(staticNode3.data, 8);
       assert.equal(staticNode2.data, 4);
@@ -428,9 +428,9 @@ describe('DataTransfer', function(){
       staticNode1.upNode = staticNode2;
       staticNode2.upNode = staticNode3;
       staticNode3.upNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "up"});
+      var topRow = new List({head: staticNode4, direction: "up"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 8);
       assert.equal(staticNode3.data, 2);
       assert.equal(staticNode2.data, null);
@@ -445,9 +445,9 @@ describe('DataTransfer', function(){
       staticNode1.upNode = staticNode2;
       staticNode2.upNode = staticNode3;
       staticNode3.upNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "up"});
+      var topRow = new List({head: staticNode4, direction: "up"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 16);
       assert.equal(staticNode3.data, 4);
       assert.equal(staticNode2.data, null);
@@ -462,9 +462,9 @@ describe('DataTransfer', function(){
       staticNode1.upNode = staticNode2;
       staticNode2.upNode = staticNode3;
       staticNode3.upNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "up"});
+      var topRow = new List({head: staticNode4, direction: "up"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 2);
       assert.equal(staticNode3.data, null);
       assert.equal(staticNode2.data, null);
@@ -479,9 +479,9 @@ describe('DataTransfer', function(){
       staticNode1.upNode = staticNode2;
       staticNode2.upNode = staticNode3;
       staticNode3.upNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "up"});
+      var topRow = new List({head: staticNode4, direction: "up"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 4);
       assert.equal(staticNode3.data, null);
       assert.equal(staticNode2.data, null);
@@ -496,9 +496,9 @@ describe('DataTransfer', function(){
       staticNode1.upNode = staticNode2;
       staticNode2.upNode = staticNode3;
       staticNode3.upNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "up"});
+      var topRow = new List({head: staticNode4, direction: "up"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 4);
       assert.equal(staticNode3.data, null);
       assert.equal(staticNode2.data, null);
@@ -513,9 +513,9 @@ describe('DataTransfer', function(){
       staticNode1.upNode = staticNode2;
       staticNode2.upNode = staticNode3;
       staticNode3.upNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "up"});
+      var topRow = new List({head: staticNode4, direction: "up"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 4);
       assert.equal(staticNode3.data, 4);
       assert.equal(staticNode2.data, null);
@@ -532,9 +532,9 @@ describe('DataTransfer', function(){
       staticNode1.downNode = staticNode2;
       staticNode2.downNode = staticNode3;
       staticNode3.downNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "down"});
+      var topRow = new List({head: staticNode4, direction: "down"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 8);
       assert.equal(staticNode1.data, null);
       assert.equal(staticNode2.data, null);
@@ -549,9 +549,9 @@ describe('DataTransfer', function(){
       staticNode1.downNode = staticNode2;
       staticNode2.downNode = staticNode3;
       staticNode3.downNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "down"});
+      var topRow = new List({head: staticNode4, direction: "down"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 2);
       assert.equal(staticNode3.data, 8);
       assert.equal(staticNode2.data, null);
@@ -566,9 +566,9 @@ describe('DataTransfer', function(){
       staticNode1.downNode = staticNode2;
       staticNode2.downNode = staticNode3;
       staticNode3.downNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "down"});
+      var topRow = new List({head: staticNode4, direction: "down"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 8);
       assert.equal(staticNode3.data, 4);
       assert.equal(staticNode2.data, 2);
@@ -583,9 +583,9 @@ describe('DataTransfer', function(){
       staticNode1.downNode = staticNode2;
       staticNode2.downNode = staticNode3;
       staticNode3.downNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "down"});
+      var topRow = new List({head: staticNode4, direction: "down"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 16);
       assert.equal(staticNode3.data, 8);
       assert.equal(staticNode2.data, 4);
@@ -600,9 +600,9 @@ describe('DataTransfer', function(){
       staticNode1.downNode = staticNode2;
       staticNode2.downNode = staticNode3;
       staticNode3.downNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "down"});
+      var topRow = new List({head: staticNode4, direction: "down"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 8);
       assert.equal(staticNode3.data, 2);
       assert.equal(staticNode2.data, null);
@@ -617,9 +617,9 @@ describe('DataTransfer', function(){
       staticNode1.downNode = staticNode2;
       staticNode2.downNode = staticNode3;
       staticNode3.downNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "down"});
+      var topRow = new List({head: staticNode4, direction: "down"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 16);
       assert.equal(staticNode3.data, 4);
       assert.equal(staticNode2.data, null);
@@ -634,9 +634,9 @@ describe('DataTransfer', function(){
       staticNode1.downNode = staticNode2;
       staticNode2.downNode = staticNode3;
       staticNode3.downNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "down"});
+      var topRow = new List({head: staticNode4, direction: "down"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 2);
       assert.equal(staticNode3.data, null);
       assert.equal(staticNode2.data, null);
@@ -651,9 +651,9 @@ describe('DataTransfer', function(){
       staticNode1.downNode = staticNode2;
       staticNode2.downNode = staticNode3;
       staticNode3.downNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "down"});
+      var topRow = new List({head: staticNode4, direction: "down"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 4);
       assert.equal(staticNode3.data, null);
       assert.equal(staticNode2.data, null);
@@ -668,9 +668,9 @@ describe('DataTransfer', function(){
       staticNode1.downNode = staticNode2;
       staticNode2.downNode = staticNode3;
       staticNode3.downNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "down"});
+      var topRow = new List({head: staticNode4, direction: "down"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 4);
       assert.equal(staticNode3.data, null);
       assert.equal(staticNode2.data, null);
@@ -685,9 +685,9 @@ describe('DataTransfer', function(){
       staticNode1.downNode = staticNode2;
       staticNode2.downNode = staticNode3;
       staticNode3.downNode = staticNode4;
-      var topRow = new NodeList({head: staticNode4, direction: "down"});
+      var topRow = new List({head: staticNode4, direction: "down"});
 
-      DataTransfer(topRow);
+      new DataTransfer(topRow);
       assert.equal(staticNode4.data, 4);
       assert.equal(staticNode3.data, 4);
       assert.equal(staticNode2.data, null);
