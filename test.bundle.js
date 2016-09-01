@@ -10299,6 +10299,7 @@
 	  var opts = options || {};
 	  this.x = opts.x || 12;
 	  this.y = opts.y || 12;
+
 	  this.height = 100;
 	  this.width = 100;
 	  this.currentNode = opts.currentNode || null;
@@ -10314,7 +10315,7 @@
 	    this.context.fillRect(coordinates.x, coordinates.y, 100, 100);
 	    this.context.fillStyle = "#000000";
 	    this.context.font = "30px clear-sans";
-	    this.context.fillText(this.currentNode.data, coordinates.x + 35, coordinates.y + 70);
+	    this.context.fillText(this.currentNode.data, coordinates.x + 40, coordinates.y + 60);
 	  }
 	};
 
