@@ -44,19 +44,21 @@
 /* 0 */
 /***/ function(module, exports) {
 
-	// create a canvas 4x4
-	// create a tile object that will have a value and know its position
-	// the canvas should know which grid space is empty or the god object that knows about everything (should not be canvas cause it does not care about what those tiles are)
-
-	// think about it as a linked list. each tile will have rlud the tile knows itself and the link to the right
-
-	// sell as a linked list/binary tree to employers!
-
-	// learning animation
-
-	// start with a canvas and make blocks line up next to each other
+// 	// create a canvas 4x4
+// 	// create a tile object that will have a value and know its position
+// 	// the canvas should know which grid space is empty or the god object that knows about everything (should not be canvas cause it does not care about what those tiles are)
+//
+// 	// think about it as a linked list. each tile will have rlud the tile knows itself and the link to the right
+//
+// 	// sell as a linked list/binary tree to employers!
+// Did you just fart?
+// Must have been me then
+// ***Bbig daddy trent
+// 	// learning animation
+// no I'm just being a dick.  I don't know what the problem be.  Money be green
+// 	// start with a canvas and make blocks line up next to each other
 
 	// var canvas = document.findElementById("grid");
-
+// you have no diea where what comes from?All of line 59?
 /***/ }
 /******/ ]);
