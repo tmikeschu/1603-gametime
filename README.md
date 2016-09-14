@@ -1,6 +1,11 @@
 # Welcome to 1603 - A Turing Versioned 2048
 
+
 This project was done by [Ilana Corson](https://github.com/icorson3) and [Charlie Kaminer](https://github.com/ckaminer) as our GameTime project at Turing School.  In our last module at Turing we switch gears from Ruby and Rails and start digging into JavaScript.  This game is a written in JavaScript and was written in two weeks after one formal week of JS training.
+
+## The Game:
+
+- [Play The Game Here](https://icorson3.github.io/1603-gametime/)
 
 ## How to play:
 
